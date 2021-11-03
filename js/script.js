@@ -115,3 +115,39 @@ const calcc = (a, b ) => {
 
 
 
+const str = "teSt";
+const arr = [1, 2, 4];
+
+console.log(str.length);
+console.log(arr.length);
+console.log(str[2]);
+
+console.log(str.toUpperCase()); // Всегда при действиях в конце ()
+console.log(str.toLowerCase());
+console.log(str);               // Действие не изменяет начальной строки
+
+
+const fruit = "Some fruit";
+
+console.log(fruit.indexOf("fruit")); // Позиция искомого элемента
+console.log(fruit.indexOf("w")); // Если нет такого, то -1
+
+
+const logg = "Hello world";
+
+console.log(logg.slice(6, 11)); // Начало и конец вырезания (11 не включительно)
+console.log(logg.slice(4)); // Конец можно не указывать
+console.log(logg.slice(-5, -1)); // Начнёт с другого конца считать
+
+console.log(logg.substring(6, 11)); // Работает также как и slice
+
+console.log(logg.substr(6, 5)); // Второе число - сколько нужно вырезать
+
+
+const num = 12.2;
+console.log(Math.round(num)); // Округление
+
+
+const testt = "12.2px";
+console.log(parseInt(testt));
+console.log(parseFloat(testt));
