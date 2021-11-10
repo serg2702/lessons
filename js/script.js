@@ -198,10 +198,10 @@ learnJS('JavaScript', done);
     }
 };
 
-//console.log(options.name);
+console.log(options.name);
 
-//delete options.name;
-//console.log(options);
+delete options.name;
+console.log(options);
 
 //console.log(options['colors']['border']);
 
@@ -234,4 +234,57 @@ console.log(border);
     // Урок20 конец*/
 
 
+
+/*const arr = [1, 2, 3, 6, 8];
+
+arr.pop(); // Удаление последнего элемента массива
+console.log(arr);
+
+arr.push(10); // Добавление элемента в конец массива
+console.log(arr);
+
+
+for (let i = 0; i < arr.length; i++) { // Перебор массива
+    console.log(arr[i]);
+}
+
+
+for (let value of arr) { // Тот же перебор 
+    console.log(value);
+}
+
+
+arr.forEach(function(item, i, arr) {
+    console.log(`${i}: ${item} внутри массива ${arr}`); // Перебор
+});
+
+
+
+const arr1 = [2, 5, 6, 8,]
+
+arr1[99] = 0;
+
+console.log(arr1.length);
+console.log(arr1);
+
+
+
+const str = prompt("", "");
+const products = str.split(", "); // Объединение в массив
+products.sort(); // Сортировка по алфавиту (всегда сортирует как строку)
+console.log(products.join('; ')); // Объединение в строку
+console.log(products);*/
+
+
+
+const array = [2, 13, 76, 45, 3];
+array.sort(compareNum); // Сортировка чисел по порядку
+console.log(array);
+
+function compareNum (a, b) {
+    return a - b; 
+}
+
+    // Урок21 конец
+    
 
