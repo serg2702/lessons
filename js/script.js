@@ -115,7 +115,7 @@ const calcc = (a, b ) => {
 
 
 
-const str = "teSt";
+/*const str = "teSt";
 const arr = [1, 2, 4];
 
 console.log(str.length);
@@ -151,3 +151,37 @@ console.log(Math.round(num)); // Округление
 const testt = "12.2px";
 console.log(parseInt(testt));
 console.log(parseFloat(testt));
+    // Урок17 конец*/
+
+
+
+/*function first() {
+    // Do something
+    setTimeout(function() {
+        console.log(1);
+    }, 500);
+}
+
+function second() {
+    console.log(2);
+}
+
+first();
+second();
+
+
+function learnJS(lang, callback) {
+    console.log(`Ya uchu: ${lang}`);
+    callback();
+}
+
+function done() {
+    console.log('Ya proshel etot urok');
+}
+
+learnJS('JavaScript', done);
+
+    //Урок19 конец*/
+
+
+
