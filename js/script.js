@@ -185,3 +185,53 @@ learnJS('JavaScript', done);
 
 
 
+/*const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        background: 'red'
+    },
+    makeTest: function() {
+        console.log('Test');
+    }
+};
+
+//console.log(options.name);
+
+//delete options.name;
+//console.log(options);
+
+//console.log(options['colors']['border']);
+
+let counter = 0;
+
+for (let key in options) {
+    if (typeof(options[key]) == 'object') {
+        for (let i in options[key]) {
+            console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+            counter++;
+        }
+    } else {
+        console.log(`Свойство ${key} имеет значение ${options[key]}`);
+        counter++;
+    }
+}  // Перебор объекта
+
+console.log(counter); // Счётчик ключей в объекте
+
+
+console.log(Object.keys(options)); // Создаёт массив со всеми ключами
+
+console.log(Object.keys(options).length); // Кол-во элементов
+
+options.makeTest(); // Вызов (запуск) функции из объекта
+
+const {border, background} = options.colors; // Деструктуризация
+console.log(border);
+
+    // Урок20 конец*/
+
+
+
