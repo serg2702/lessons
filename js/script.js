@@ -273,7 +273,7 @@ const str = prompt("", "");
 const products = str.split(", "); // Объединение в массив
 products.sort(); // Сортировка по алфавиту (всегда сортирует как строку)
 console.log(products.join('; ')); // Объединение в строку
-console.log(products);*/
+console.log(products);
 
 
 
@@ -285,6 +285,115 @@ function compareNum (a, b) {
     return a - b; 
 }
 
-    // Урок21 конец
+    // Урок21 конец*/
     
+
+
+/*let a = 5,
+    b = a; // Записывает сам объект
+
+b = b + 5;
+console.log(b);
+console.log(a);
+
+
+
+const obj = {
+    a: 5,
+    b: 1
+};
+const copy  = obj; // Записывает ссылку, а не сам объект
+
+copy.a = 10;
+console.log(copy);
+console.log(obj);
+
+
+
+function copy(mainObj) { // Копирование объекта 
+    let objCopy = {};
+
+    let key;
+    for (key in mainObj) {
+        objCopy[key] = mainObj[key];
+    }
+
+    return objCopy;
+}
+
+const numbers = {
+    a: 2,
+    b: 5,
+    c: {
+        x: 7,
+        y: 4
+    }
+};
+
+const newNumbers = copy(numbers);
+
+newNumbers.a = 10;
+newNumbers.c.x = 10; // Вложенный объект всё равно как ссылка
+                     // Меняется в обоих объектах (поверхностная копия)
+
+console.log(newNumbers);
+console.log(numbers);
+
+
+
+const add = {
+    d: 17,
+    e:20
+};
+
+console.log(Object.assign(numbers, add)); // Соединение двух объектов
+
+const clone = Object.assign({}, add); // Копирование через пустой объект
+
+clone.d = 20;
+console.log(add);
+console.log(clone);
+
+
+
+const oldArr = ['a', 'b', 'c'];
+const newArr = oldArr.slice(); // Копирование массива
+
+newArr[1] = 'aofn';
+console.log(newArr);
+console.log(oldArr);
+
+
+
+const video = ['youtube', 'vimeo', 'rutube'],
+      blogs = ['wordpress', 'livejournal', 'blogger'],
+      internet = [...video, ...blogs, 'vk', 'facebook'];
+        // Spread оператор(...) разворачивает массив и копирует его
+
+console.log(internet);
+
+
+function log(a, b, c) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+const num = [2, 5, 7];
+
+log(...num); // Разворачивает массив (передаёт по одному значению)
+
+
+const array = ['a', 'b'];
+
+const newArray = [...array]; // Копирование массива
+
+const q = {
+    one: 1,
+    two: 2
+};
+
+const newq = {...q};*/
+
+    // Урок21 конец
 
