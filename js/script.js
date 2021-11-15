@@ -395,5 +395,44 @@ const q = {
 
 const newq = {...q};*/
 
-    // Урок21 конец
+    // Урок22 конец
+
+
+
+/*let str  = "some"; // Примитив(строка)
+let str_obj = new String(str); // Объект (из-за действий над строкой)
+
+console.log(typeof(str));
+console.log(typeof(str_obj));
+
+console.dir([1, 2, 3]);
+
+
+
+const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello: function() {
+        console.log("Hello");
+    }
+};
+
+const john = {
+    health: 100
+};
+
+john.__proto__ = soldier; // Старый способ "привязки" прототипов
+
+Object.setPrototypeOf(john, soldier); // Новый способ
+
+console.log(john.armor);
+john.sayHello();
+
+
+const mark = Object.create(soldier); // Тоже новый способ
+mark.sayHello();*/
+
+    //Урок23 конец
+
+
 
