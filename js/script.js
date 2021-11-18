@@ -563,8 +563,30 @@ console.log("Ёжик" > "яблоко"); // Вывод false. Сравнени�
 
 console.log(0 || "" || 2 || undefined || true || false); // Вывод 2 (первая правда)
 
-    // Урок27 конец*/
+    // Урок27 конец
 
 
-
+// Более страые методы
 const box = document.getElementById('box');
+console.log(box);
+
+const btns = document.getElementsByTagName('button')[1]; // Получение только второй кнопки
+console.log(btns[1]); // Вывод только одного элемента. ИСПОЛЬЗОВАТЬ ПО ОТДЕЛЬНОСТИ
+
+const circles = document.getElementsByClassName('circle');
+console.log(circles);
+
+
+// Более новые методы
+const hearts = document.querySelectorAll('.heart'); // В данном случае для класса обязательна точка
+hearts.forEach(item => { // Разворачивание массива по одному
+    console.log(item);
+});
+
+const oneHeart = document.querySelector('.heart'); // Принимает только первое значение
+console.log(oneHeart);
+
+    // Урок28 конец*/
+
+
+
