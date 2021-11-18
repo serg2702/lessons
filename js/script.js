@@ -567,3 +567,4 @@ console.log(0 || "" || 2 || undefined || true || false); // Вывод 2 (пер
 
 
 
+const box = document.getElementById('box');
