@@ -571,7 +571,7 @@ const box = document.getElementById('box');
 console.log(box);
 
 const btns = document.getElementsByTagName('button')[1]; // Получение только второй кнопки
-console.log(btns[1]); // Вывод только одного элемента. ИСПОЛЬЗОВАТЬ ПО ОТДЕЛЬНОСТИ
+console.log(btns[1]); // Вывод только одного элемента. Использовать по отдельности
 
 const circles = document.getElementsByClassName('circle');
 console.log(circles);
@@ -587,6 +587,82 @@ const oneHeart = document.querySelector('.heart'); // Принимает тол�
 console.log(oneHeart);
 
     // Урок28 конец*/
+
+
+
+const box = document.getElementById('box'),
+      btns = document.getElementsByTagName('button'),
+      wrapper = document.querySelector('.wrapper'),
+      circles = document.getElementsByClassName('circle'),
+      hearts = wrapper.querySelectorAll('.heart'), // document можно заменить на wrapper
+      oneHeart = document.querySelector('.heart'); // если wrapper уже объявлен
+                                            // и heart есть внутри wrapper
+box.style.backgroundColor = 'blue';
+box.style.width = '500px'; // Надо передавать строкой, а не значением.
+                           // CCS не определяет значение, а только строку
+
+btns[1].style.borderRadius = '100%';
+circles[0].style.backgroundColor = 'red'; // Все сразу не поменяются. Нужен конкретный элемент
+
+
+box.style.cssText = 'background-color: yellow; width: 600px'; //Чтобы менять сразу несколько свойств
+
+let num = 750;
+box.style.cssText = `background-color: yellow; width: ${num}px`; // Можно передавать значение
+
+
+//for (let i = 0; i < hearts.length; i++) {
+//    hearts[i].style.backgroundColor = 'blue'; // Изменение нескольких элементов
+//}                                             // В псевдомассиве (один из способов)
+                                                // Редко используется
+
+hearts.forEach(item =>{
+    item.style.backgroundColor = 'black';
+});
+
+
+const div = document.createElement('div'); // Создание нового элемента (div его тэг) 
+                                            // Существует только в JS
+const text = document.createTextNode('Tut text'); // Создание текста
+
+div.classList.add('black');
+
+//document.body.append(div); // Вставка элемента после чего-то (body)
+
+//document.querySelector('.wrapper').append(div); // Если один раз в wrapper (например)
+                                  // То можно не объявлять переменной, а сделать вот так
+
+wrapper.append(div); // Вставка элемента после чего-то (wrapper)
+                        // Два сразу не работает
+//wrapper.prepend(div); // Вставка элемента перед чем-то (wrapper)
+
+
+//hearts[1].before(div); // Вставка перед каким-то элементом
+//hearts[1].after(div); // Вставка после какого-то элемента
+
+//circles[0].remove(); // Удаление какого-то элемента
+
+//hearts[0].replaceWith(circles[0]); // Замена элемента
+
+
+// Устаревшие конструкции
+
+//wrapper.appendChild(div); // В конец
+//wrapper.insertBefore(div, hearts[1]); // Перед элементом
+//wrapper.removeChild(hearts[1]); // Удаление
+//wrapper.replaceChild(circles[0], hearts[0]); // Замена
+
+
+div.innerHTML = "<h1>hello world</h1>"; // Сюда можно писать HTML код
+//div.textContent = "hello"; // Это просто текст 
+
+
+//div.insertAdjacentHTML('beforebegin', '<h2>hello</h2>'); // Вставка HTML перед элементом
+//div.insertAdjacentHTML('afterbegin', '<h2>hello</h2>'); // Вставка HTML после элемента
+//div.insertAdjacentHTML('beforeend', '<h2>hello</h2>'); // Вставка HTML в конец элемента
+div.insertAdjacentHTML('afterend', '<h2>hello</h2>'); // Вставка HTML после элемента
+
+    // Урок29 конец
 
 
 
